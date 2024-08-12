@@ -1,0 +1,184 @@
+{
+  "staffs": [
+    {
+      "id": "702a",
+      "firstname": "Balaji",
+      "lastname": "Sri",
+      "email": "balaji@gmail.com",
+      "phone": "8189815115",
+      "department": "Developer",
+      "password": "Balaji@2005"
+    },
+    {
+      "id": "cceb",
+      "firstname": "Arun ",
+      "lastname": "Vijay",
+      "email": "av@gmail.com",
+      "password": "Arun@2005",
+      "phone": "6381624210",
+      "department": "Information Technology"
+    },
+    {
+      "id": "3830",
+      "firstname": "Ashok",
+      "lastname": "Kanna",
+      "email": "ak@gmail.com",
+      "password": "Ashok@2005",
+      "phone": "8148140387",
+      "department": "Human Resources"
+    },
+    {
+      "id": "b661",
+      "firstname": "Hari",
+      "lastname": "Baskar",
+      "email": "hb@gmail.com",
+      "password": "Hari@2004",
+      "phone": "9363588283",
+      "department": "Operations"
+    },
+    {
+      "id": "8980",
+      "firstname": "Ashwin",
+      "lastname": "S",
+      "email": "ash@gmail.com",
+      "password": "Ash@2005",
+      "phone": "8489420883",
+      "department": "Human Resources"
+    },
+    {
+      "id": "647a",
+      "firstname": "Adhish",
+      "lastname": "R",
+      "email": "adhish@gmail.com",
+      "password": "Adhish@2004",
+      "phone": "9840820525",
+      "department": "Information Technology"
+    },
+    {
+      "id": "d651",
+      "firstname": "Agash",
+      "lastname": "K",
+      "email": "agash@gmail.com",
+      "password": "Agash@2004",
+      "phone": "8787878909",
+      "department": "Finance"
+    },
+    {
+      "id": "24a9",
+      "firstname": "Ashwin",
+      "lastname": "Vikram",
+      "email": "vikram@gmail.com",
+      "password": "Vikram@2004",
+      "phone": "7678765451",
+      "department": "Human Resources"
+    },
+    {
+      "id": "f1d2",
+      "firstname": "Nitin",
+      "lastname": "M",
+      "email": "nitin@gmail.com",
+      "password": "Nitin@2004",
+      "phone": "9871234543",
+      "department": "Information Technology"
+    },
+    {
+      "id": "9aae",
+      "firstname": "Dharanish",
+      "lastname": "M",
+      "email": "dhara@gmail.com",
+      "password": "Dhara@2004",
+      "phone": "6751677258",
+      "department": "Operations"
+    },
+    {
+      "id": "4031",
+      "firstname": "Deepak",
+      "lastname": "Leo",
+      "email": "leo@gmail.com",
+      "password": "Leo@2005",
+      "phone": "8675645387",
+      "department": "Finance"
+    },
+    {
+      "id": "0051",
+      "firstname": "Aswath",
+      "lastname": "S",
+      "email": "aswath@gmail.com",
+      "password": "Aswath@2004",
+      "phone": "7687652132",
+      "department": "Information Technology"
+    },
+    {
+      "id": "dc17",
+      "firstname": "Gowtham",
+      "lastname": "S",
+      "email": "gow@gmail.com",
+      "password": "Gow@2005",
+      "phone": "8678687868",
+      "department": "Information Technology"
+    },
+    {
+      "id": "4fb4",
+      "firstname": "Someone",
+      "lastname": "l",
+      "email": "some@gmail.com",
+      "password": "Bala@2005",
+      "phone": "7575756565",
+      "department": "Finance"
+    }
+  ],
+  "circular": [
+    {
+      "id": "b186",
+      "heading": "This is circular Heading",
+      "body": "This is body of the circular",
+      "date": "30/07/2024, 11:48:33"
+    },
+    {
+      "id": "678d",
+      "heading": "Circular 2",
+      "body": "This is circular 2's body",
+      "date": "30/07/2024, 11:48:56"
+    },
+    {
+      "id": "bee8",
+      "heading": "circular head",
+      "body": "circular body",
+      "date": "30/07/2024, 12:11:59"
+    }
+  ],
+  "jobs-alloted": [
+    {
+      "id": "2779",
+      "staffId": "647a",
+      "staffName": "Adhish R",
+      "department": "Information Technology",
+      "shift": "afternoon",
+      "date": "2024-07-30",
+      "task": "Job 2",
+      "description": "This is job2 task"
+    }
+  ],
+  "requests": [
+    {
+      "id": "de11",
+      "staffId": "b661",
+      "staffName": "Hari Baskar",
+      "department": "Operations",
+      "shift": "morning",
+      "date": "2024-07-30",
+      "task": "Login Page",
+      "description": "Create a login page with Axios get"
+    },
+    {
+      "id": "ff3b",
+      "staffId": "3830",
+      "staffName": "Ashok Kanna",
+      "department": "Human Resources",
+      "shift": "morning",
+      "date": "2024-07-31",
+      "task": "task 1",
+      "description": "body here"
+    }
+  ]
+}
