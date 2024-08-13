@@ -136,7 +136,7 @@ const FirstPage = () => {
       
     <div className='send'>
       
-      <button>Register</button>
+      <button onClick={()=> navigate('/role')}>Register</button>
     </div>
 
     <div id='row'>

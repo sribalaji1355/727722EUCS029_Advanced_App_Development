@@ -83,7 +83,7 @@ const Circular = () => {
               </Card>
             ))
           ) : (
-            <div className="noCirculars">
+            <div className="nomoreCirculars">
               <br />
               <br />
               <br />

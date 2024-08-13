@@ -7,6 +7,10 @@
   pointer-events: none;
 }
 
+button{
+  cursor: pointer;
+}
+
 body{
   background-image: url("https://media.istockphoto.com/id/1473121061/vector/vector-illustration-with-blue-curves-overlapping-background-margins-and-gradient-waves-and.jpg?s=612x612&w=0&k=20&c=Mp7wTkbVW2opnPEA-UzZvt8yjYMKo12Bkv7LHApDXqY=");
   background-size: cover;

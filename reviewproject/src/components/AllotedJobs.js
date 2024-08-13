@@ -159,6 +159,8 @@ const AllotedJobs = () => {
           )}
         </div>
       </Container>
+      <br></br>
+      <br></br>
     </div>
   );
 };

@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 import com.example.demo.model.Jobs;
 import com.example.demo.repository.JobsRepo;
 
+import jakarta.transaction.Transactional;
+
 @Service
 public class JobsService {
 
@@ -23,10 +25,11 @@ public class JobsService {
     {
         return jobsRepo.findByStaffId(staffId);
     }
-    
-    public void deletejob(int id)
+
+    @Transactional
+    public void deletejob(String task,int staffId)
     {
-        jobsRepo.deleteById(id);
+        jobsRepo.deleteByTaskAndStaffId(task, staffId);
     }
     
     public List<Jobs> jobsdatabydate(String date) {

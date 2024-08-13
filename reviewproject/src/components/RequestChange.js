@@ -8,22 +8,32 @@ const RequestChange = () => {
     const [requests, setRequests] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:8080/requests')
+        axios.get('http://localhost:8080/requests/get')
             .then(response => setRequests(response.data))
             .catch(error => console.error('Error fetching requests:', error));
     }, []);
 
-    const handleDeleteJob = (jobId) => {
-        axios.delete(`http://localhost:8080/jobs-alloted/${jobId}`)
+    const handleDeleteJob = async (task, staffId, id) => {
+        console.log(task);
+        console.log(staffId);
+        await axios.delete(`http://localhost:8080/jobsalloted/delete?task=${encodeURIComponent(task)}&staffId=${staffId}`)
             .then(response => {
-                if (response.status === 200) {
-                    setRequests(requests.filter(request => request.id !== jobId));
+                if (response.status === 204) {
                     window.location.href = '/schedule';
                 } else {
                     console.error('Error deleting job');
                 }
             })
             .catch(error => console.error('Error deleting job:', error));
+
+            await axios.delete(`http://localhost:8080/requests/delete`, { params: { id } })
+            .then(response => {
+              console.log('Request deleted successfully:', response.data);
+            })
+            .catch(error => {
+              console.error('Error deleting request:', error);
+              alert('Error deleting request. Please try again.');
+            });
     };
 
     return (
@@ -48,7 +58,7 @@ const RequestChange = () => {
                                 <p><strong>Task:</strong> {request.task}</p>
                                 <button
                                     className="delete-button"
-                                    onClick={() => handleDeleteJob(request.id)}
+                                    onClick={() => handleDeleteJob(request.task, request.staffId, request.id)}
                                 >
                                     Delete Job
                                 </button>

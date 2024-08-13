@@ -1,11 +1,11 @@
 import React from 'react';
-import Navbar from './Navbar';
+import StaffNavbar from './StaffNavbar';
 import './Help.css';
 
 const Help = () => {
     return (
         <div className='help-entire-page'>
-            <Navbar/>
+            <StaffNavbar/>
             <div className="help-content">
                 <div className="help-container">
                     <h1 className="help-title">Help & User Guide</h1>

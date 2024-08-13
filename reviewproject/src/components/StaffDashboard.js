@@ -22,7 +22,7 @@ export default function StaffDashboard() {
         <br></br>
         <br></br>
         <div>
-          <div className='firstportion'>
+          <div className='firstportionof'>
             <div id='asdfghjk'>
               Welcome Back!
             </div>
