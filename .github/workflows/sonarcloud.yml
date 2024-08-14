@@ -25,4 +25,4 @@ jobs:
           args: >
             -Dsonar.projectKey=sribalaji1355_727722EUCS029_Advanced_App_Development
             -Dsonar.organization=sribalaji1355
-            -Dsonar.exclusions=/*.java
+            -Dsonar.exclusions=**/*.java
